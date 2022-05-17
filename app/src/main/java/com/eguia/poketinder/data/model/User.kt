@@ -1,4 +1,4 @@
-package com.eguia.poketinder.data
+package com.eguia.poketinder.data.model
 
 import java.io.Serializable
 

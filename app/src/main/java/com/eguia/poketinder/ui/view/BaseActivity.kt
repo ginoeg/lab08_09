@@ -1,7 +1,6 @@
-package com.eguia.poketinder.activity
+package com.eguia.poketinder.ui.view
 
 import android.os.Bundle
-import android.view.AbsSavedState
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding

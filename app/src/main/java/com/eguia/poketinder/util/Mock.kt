@@ -1,6 +1,6 @@
 package com.eguia.poketinder.util
 
-import com.eguia.poketinder.data.Onboarding
+import com.eguia.poketinder.data.model.Onboarding
 
 
 class Mock {

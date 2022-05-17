@@ -1,4 +1,4 @@
-package com.eguia.poketinder.data
+package com.eguia.poketinder.data.model
 
 data class Onboarding(
     val id: Int,

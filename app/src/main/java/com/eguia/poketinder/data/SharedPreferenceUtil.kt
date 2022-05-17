@@ -1,9 +1,9 @@
-package com.eguia.poketinder.util
+package com.eguia.poketinder.data
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
-import com.eguia.poketinder.data.User
+import com.eguia.poketinder.data.model.User
 import com.google.gson.Gson
 
 

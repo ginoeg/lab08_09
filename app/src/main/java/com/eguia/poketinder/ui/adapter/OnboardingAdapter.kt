@@ -1,11 +1,11 @@
-package com.eguia.poketinder.adapter
+package com.eguia.poketinder.ui.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.eguia.poketinder.R
-import com.eguia.poketinder.data.Onboarding
+import com.eguia.poketinder.data.model.Onboarding
 import com.eguia.poketinder.databinding.ItemOnboardingBinding
 import com.eguia.poketinder.util.inflate
 

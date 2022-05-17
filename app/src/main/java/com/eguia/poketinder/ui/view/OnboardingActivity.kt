@@ -1,4 +1,4 @@
-package com.eguia.poketinder.activity
+package com.eguia.poketinder.ui.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,10 +10,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.eguia.poketinder.R
-import com.eguia.poketinder.adapter.OnboardingAdapter
+import com.eguia.poketinder.ui.adapter.OnboardingAdapter
 import com.eguia.poketinder.databinding.ActivityOnboardingBinding
 import com.eguia.poketinder.util.Mock
-import com.eguia.poketinder.util.SharedPreferenceUtil
+import com.eguia.poketinder.data.SharedPreferenceUtil
 
 class OnboardingActivity: BaseActivity<ActivityOnboardingBinding>(ActivityOnboardingBinding::inflate) {
 

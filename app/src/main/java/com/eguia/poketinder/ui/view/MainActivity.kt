@@ -1,4 +1,4 @@
-package com.eguia.poketinder.activity
+package com.eguia.poketinder.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
