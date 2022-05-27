@@ -1,13 +1,12 @@
-package com.eguia.poketinder.viewmodel
+package com.eguia.poketinder.ui.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.eguia.poketinder.data.SharedPreferenceUtil
 import com.eguia.poketinder.data.model.User
+import com.eguia.poketinder.util.SharedPreferenceUtil
 
 class LoginViewModel(private val context: Context): ViewModel() {
-
     private lateinit var sharedPreferenceUtil: SharedPreferenceUtil
 
     val emptyEmailError = MutableLiveData<Boolean>()
@@ -16,7 +15,7 @@ class LoginViewModel(private val context: Context): ViewModel() {
     val goalSuccesActivity = MutableLiveData<Boolean>()
 
     fun onCreate(){
-        sharedPreferenceUtil=SharedPreferenceUtil().also{
+        sharedPreferenceUtil= SharedPreferenceUtil().also{
             it.setSharedPreference(context)
         }
     }

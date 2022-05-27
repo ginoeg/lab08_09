@@ -1,4 +1,4 @@
-package com.eguia.poketinder.data
+package com.eguia.poketinder.util
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,12 +8,14 @@ import com.google.gson.Gson
 
 
 class SharedPreferenceUtil {
-    companion object {
-        private const val SHARED_PREFERENCE_KEY = "SHARED_PREFERENCE_KEY"
-        private lateinit var sharedPreference: SharedPreferences
-        private const val USER = "USER"
-        private const val INTRO = "INTRO"
+    companion object{
+        private const val SHARED_PREFERENCE_KEY="SHARED_PREFERENCE_KEY"
 
+        private lateinit var sharedPreference: SharedPreferences
+
+        private const val USER = "USER"
+
+        private const val INTRO = "INTRO"
     }
 
     fun setSharedPreference(context: Context){
@@ -23,6 +25,7 @@ class SharedPreferenceUtil {
 
     fun saveFacebookUser(user: User){
         val gson = Gson()
+
         val jsonFacebookUser = gson.toJson(user)
 
         sharedPreference
@@ -33,27 +36,26 @@ class SharedPreferenceUtil {
 
     fun getUser(): User? {
         var userFacebook: User? = null
-        val jsonUserFacebook = sharedPreference.getString(USER,"")
+
+        val jsonUserFacebook = sharedPreference.getString(USER, "")
+
         try {
             userFacebook = Gson().fromJson(jsonUserFacebook, User::class.java)
-        } catch (e: Exception){
+        }catch (e: Exception){
             Log.d("Codercool",e.message.toString())
         }
-
         return userFacebook
     }
 
-    fun saveIntroShow() {
+    fun saveIntroShow(){
         sharedPreference
             .edit()
             .putBoolean(INTRO, true)
             .apply()
     }
 
+
     fun getIntroShow(): Boolean = sharedPreference
         .getBoolean(INTRO, false)
-
-
-
 
 }

@@ -1,12 +1,12 @@
-package com.eguia.poketinder.viewmodel
+package com.eguia.poketinder.ui.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
-import com.eguia.poketinder.data.SharedPreferenceUtil
 import com.eguia.poketinder.data.model.User
+import com.eguia.poketinder.util.SharedPreferenceUtil
+
 
 class RegisterViewModel(private val context: Context) {
-
     private lateinit var sharedPreferenceUtil: SharedPreferenceUtil
 
     val emptyUserError = MutableLiveData<Boolean>()
@@ -39,6 +39,7 @@ class RegisterViewModel(private val context: Context) {
         }else if(password1 != password2){
             noMatchPassword1and2Error.postValue(true)
         }else{
+            //Se usó de contraseña 123
             val user = User(
                 "1",
                 username,

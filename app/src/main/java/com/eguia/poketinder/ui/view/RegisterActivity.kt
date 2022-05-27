@@ -1,11 +1,10 @@
 package com.eguia.poketinder.ui.view
 
-
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.eguia.poketinder.databinding.ActivityRegisterBinding
-import com.eguia.poketinder.viewmodel.RegisterViewModel
+import com.eguia.poketinder.ui.viewmodel.RegisterViewModel
 
 
 class RegisterActivity: BaseActivity<ActivityRegisterBinding>(ActivityRegisterBinding::inflate) {

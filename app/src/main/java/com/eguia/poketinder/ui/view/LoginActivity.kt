@@ -4,12 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.eguia.poketinder.databinding.ActivityLoginBinding
-import com.eguia.poketinder.viewmodel.LoginViewModel
+import com.eguia.poketinder.ui.viewmodel.LoginViewModel
 
 
-class LoginActivity: BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::inflate) {
+class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::inflate){
 
-
+    //private lateinit var sharedPreferenceUtil: SharedPreferenceUtil
     private lateinit var loginViewModel: LoginViewModel
 
     override fun onCreate(savedInstanceState: Bundle?){
@@ -48,4 +48,5 @@ class LoginActivity: BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::in
         loginViewModel.validateInputs(binding.edtEmail.text.toString(),binding.edtPassword.text.toString())
 
     }
+
 }

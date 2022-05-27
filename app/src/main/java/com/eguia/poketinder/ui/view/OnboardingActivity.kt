@@ -10,12 +10,13 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.eguia.poketinder.R
-import com.eguia.poketinder.ui.adapter.OnboardingAdapter
 import com.eguia.poketinder.databinding.ActivityOnboardingBinding
+import com.eguia.poketinder.ui.adapter.OnboardingAdapter
 import com.eguia.poketinder.util.Mock
-import com.eguia.poketinder.data.SharedPreferenceUtil
+import com.eguia.poketinder.util.SharedPreferenceUtil
 
-class OnboardingActivity: BaseActivity<ActivityOnboardingBinding>(ActivityOnboardingBinding::inflate) {
+
+class OnboardingActivity : BaseActivity<ActivityOnboardingBinding>(ActivityOnboardingBinding::inflate) {
 
     private val adapter = OnboardingAdapter(Mock().getOnboarding())
 
